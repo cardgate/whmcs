@@ -64,8 +64,7 @@ function getBankOptions() {
 }
 
 function cgp_form( $params, $option ) {
-    var_dump($params);
-    die;
+    
     # Gateway Specific Variables
     $gatewayusername = $params['username'];
     $gatewaytestmode = $params['testmode'];
