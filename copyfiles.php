@@ -114,8 +114,8 @@ $src = '../modules/gateways/cgp_sofortbanking.php';
 $dst = 'modules/gateways/cgp_sofortbanking.php';
 $is_dir = false;
 array_push( $data, data_element( $src, $dst, $is_dir ) );
-$src = '../modules/gateways/cgp_version.php';
-$dst = 'modules/gateways/cgp_version.php';
+$src = '../modules/gateways/cgp_generic.php';
+$dst = 'modules/gateways/cgp_generic.php';
 $is_dir = false;
 array_push( $data, data_element( $src, $dst, $is_dir ) );
 
