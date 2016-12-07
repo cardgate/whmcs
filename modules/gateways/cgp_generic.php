@@ -17,15 +17,11 @@ function cgp_version_data() {
 }
 
 function cgp_get_url( $test ) {
-    if ( !empty( $_SERVER['CGP_GATEWAY_URL'] ) ) {
-        return $_SERVER['CGP_GATEWAY_URL'];
-    } else {
         if ( $test == 1 ) {
             return "https://secure-staging.curopayments.net/gateway/cardgate/";
         } else {
             return "https://secure.curopayments.net/gateway/cardgate/";
         }
-    }
 }
 
 function generateBankHtml() {
