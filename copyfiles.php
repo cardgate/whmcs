@@ -129,8 +129,8 @@ foreach ( $data as $k => $v ) {
 echo 'files copied<br>';
 
 // Get real path for our folder
-$rootPath = '/home/richard/websites/whmcs/htdocs/_plugin/modules';
-$filename = 'modules.zip';
+$rootPath = '/var/www/whmcs/htdocs/_plugin/modules';
+$filename = 'cardgate.zip';
 
 zipfiles($filename, $rootPath);
 echo 'zipfile made<br>';
