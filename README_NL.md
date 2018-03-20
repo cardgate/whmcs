@@ -1,6 +1,6 @@
 ![CardGate](https://cdn.curopayments.net/thumb/200/logos/cardgate.png)
 
-# CardGate module for WHMCS version **5.x.x** and WHMCS version **6.x**
+# CardGate module voor WHMCS version **5.x.x** and WHMCS version **6.x**
 
 [![Total Downloads](https://img.shields.io/packagist/dt/cardgate/whmcs.svg)](https://packagist.org/packages/cardgate/whmcs)
 [![Latest Version](https://img.shields.io/packagist/v/cardgate/whmcs.svg)](https://github.com/cardgate/whmcs/releases)
