@@ -12,8 +12,9 @@ This plugin supports WHMCS version **5.x.x** and WHMCS version **6.x**
 
 ## Preparation
 
-The usage of this module requires that you have obtained CardGate securitycredentials.
-Please visit [My Cardgate](https://my.cardgate.com/) and retrieve your Site ID and Hash key, or contact your accountmanager.
+The usage of this module requires that you have obtained CardGate securitycredentials.  
+Please visit [My Cardgate](https://my.cardgate.com/) and retrieve your Site ID and Hash key,  
+or contact your accountmanager.
 
 ## Installation
 
