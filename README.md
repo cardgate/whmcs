@@ -2,9 +2,9 @@
 
 # CardGate module for WHMCS version **5.x.x** and WHMCS version **6.x**
 
-[![Total Downloads](https://img.shields.io/packagist/dt/cardgate/opencart3.svg)](https://packagist.org/packages/cardgate/opencart3)
-[![Latest Version](https://img.shields.io/packagist/v/cardgate/opencart3.svg)](https://github.com/cardgate/opencart3/releases)
-[![Build Status](https://travis-ci.org/cardgate/opencart3.svg?branch=master)](https://travis-ci.org/cardgate/opencart3)
+[![Total Downloads](https://img.shields.io/packagist/dt/cardgate/whmcs.svg)](https://packagist.org/packages/cardgate/whmcs)
+[![Latest Version](https://img.shields.io/packagist/v/cardgate/whmcs.svg)](https://github.com/cardgate/whmcs/releases)
+[![Build Status](https://travis-ci.org/cardgate/whmcs.svg?branch=master)](https://travis-ci.org/cardgate/whmcs)
 
 ## Support
 
@@ -12,8 +12,9 @@ This plugin supports WHMCS version **5.x.x** and WHMCS version **6.x**
 
 ## Preparation
 
-The usage of this module requires that you have obtained CardGate securitycredentials.
-Please visit [My Cardgate](https://my.cardgate.com/) and retrieve your Site ID and Hash key, or contact your accountmanager.
+The usage of this module requires that you have obtained CardGate securitycredentials.  
+Please visit [My Cardgate](https://my.cardgate.com/) and retrieve your Site ID and Hash key,  
+or contact your accountmanager.
 
 ## Installation
 
@@ -43,9 +44,9 @@ Please visit [My Cardgate](https://my.cardgate.com/) and retrieve your Site ID a
 
 10. Go to [My Cardgate](https://my.cardgate.com/), choose **Sites** and select the appropriate site.
 
-11. Go to **Connection to the website** and enter the **Callback URL**, for example:
-    **http://mywebshop.com/modules/gateways/callback/cardgateplus.php**
-(Replace **http://mywebshop.com** with the URL of your webshop)
+11. Go to **Connection to the website** and enter the **Callback URL**, for example:  
+    **http://mywebshop.com/modules/gateways/callback/cardgateplus.php**  
+    (Replace **http://mywebshop.com** with the URL of your webshop)    
 
 12. When you are **finished testing** make sure that you switch **all activated payment methods** from **Test Mode** to **Live mode** and save it (**Save**).
 
