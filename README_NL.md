@@ -2,10 +2,6 @@
 
 # CardGate module voor WHMCS version **5.x.x** and WHMCS version **6.x**
 
-[![Total Downloads](https://img.shields.io/packagist/dt/cardgate/whmcs.svg)](https://packagist.org/packages/cardgate/whmcs)
-[![Latest Version](https://img.shields.io/packagist/v/cardgate/whmcs.svg)](https://github.com/cardgate/whmcs/releases)
-[![Build Status](https://travis-ci.org/cardgate/whmcs.svg?branch=master)](https://travis-ci.org/cardgate/whmcs)
-
 ## Support
 
 Deze plugin is geschikt voor WHMCS versie **5.x.x** en WHMCS versie **6.x**
