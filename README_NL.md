@@ -10,12 +10,12 @@ Deze plugin is geschikt voor WHMCS versie **5.x.x** en WHMCS versie **6.x**
 
 Voor het gebruik van deze module zijn CardGate inloggegevens noodzakelijk.
 
-Ga a.u.b. naar [Mijn CardGate](https://my.cardgate.com/) en kopieer de  Site ID and Codeersleutel,  
+Ga a.u.b. naar [Mijn CardGate](https://my.cardgate.com/) en kopieer de  site ID and hash key,  
 of vraag deze gegevens aan uw accountmanager.
 
 ## Installatie
 
-1. Download en unzip het **cardgate.zip** bestand op je bureaublad.
+1. Download en unzip de meest recente [source code](https://github.com/cardgate/whmcs/releases/) op je bureaublad.
 
 2. Upload de **gateways** map naar de **modules** map van je webshop.
 
@@ -31,7 +31,7 @@ of vraag deze gegevens aan uw accountmanager.
 
 5. Kies voor **Test mode** wanneer je eerst wilt testen.
 
-6. Vul nu de **Site ID** en de **Hash Key (Codeersleutel)** in, deze kun je vinden bij **Sites** op [Mijn CardGate](https://my.cardgate.com/).
+6. Vul nu de **site ID** en de **hash key** in, deze kun je vinden bij **Sites** op [Mijn CardGate](https://my.cardgate.com/).
 
 7. Vul de gewenste standaard **gateway taal** in.
 

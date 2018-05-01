@@ -7,7 +7,7 @@ function cgp_giropay_config() {
         "FriendlyName" => array( "Type" => "System", "Value" => "Card Gate - Giropay" ),
         "testmode" => array( "FriendlyName" => "Mode", "Type" => "dropdown", "Options" => "Test,Live", ),
         "siteid" => array( "FriendlyName" => "Site ID", "Type" => "text", "Size" => "15", ),
-        "hashkey" => array( "FriendlyName" => "Hash Key", "Type" => "text", "Size" => "15", ),
+        "hashkey" => array( "FriendlyName" => "Hash key", "Type" => "text", "Size" => "15", ),
         "cgplanguage" => array( "FriendlyName" => "Gateway Language", "Type" => "dropdown", "Options" => "English,Nederlands", ),
     );
 
