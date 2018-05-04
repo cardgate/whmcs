@@ -9,12 +9,12 @@ This plugin supports WHMCS version **5.x.x** and WHMCS version **6.x**
 ## Preparation
 
 The usage of this module requires that you have obtained CardGate securitycredentials.  
-Please visit [My Cardgate](https://my.cardgate.com/) and retrieve your Site ID and Hash key,  
+Please visit [My CardGate](https://my.cardgate.com/) and retrieve your site ID and hash key,  
 or contact your accountmanager.
 
 ## Installation
 
-1. Download the cardgate.zip file on your desktop.
+1. Download and unzip the most recent [source code](https://github.com/cardgate/whmcs/releases/) file on your desktop.
 
 2. Upload the **gateways** folder to the **modules** folder of your webshop.
 
@@ -30,7 +30,7 @@ or contact your accountmanager.
 
 5. Select **Test mode** if you want to test first.
 
-6. Now enter the **Site ID** and the **Hash Key** which you can find at **Sites** on [My Cardgate](https://my.cardgate.com/).
+6. Now enter the **site ID** and the **hash key** which you can find at **Sites** on [My CardGate](https://my.cardgate.com/).
 
 7. Enter the desired default **gateway language**.
 
@@ -38,7 +38,7 @@ or contact your accountmanager.
 
 9. Repeat **steps 3 through 8** for **each payment method** you wish to **activate**.
 
-10. Go to [My Cardgate](https://my.cardgate.com/), choose **Sites** and select the appropriate site.
+10. Go to [My CardGate](https://my.cardgate.com/), choose **Sites** and select the appropriate site.
 
 11. Go to **Connection to the website** and enter the **Callback URL**, for example:  
     **http://mywebshop.com/modules/gateways/callback/cardgateplus.php**  
