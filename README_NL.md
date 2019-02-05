@@ -31,7 +31,7 @@ of vraag deze gegevens aan uw accountmanager.
 
 5. Kies voor **Test mode** wanneer je eerst wilt testen.
 
-6. Vul nu de **Site ID** en de **Hash Key (Codeersleutel)** in, deze kun je vinden bij **Sites** op [Mijn CardGate](https://my.cardgate.com/).
+6. Vul nu de **site ID** en de **hash key** in, deze kun je vinden bij **Sites** op [Mijn CardGate](https://my.cardgate.com/).
 
 7. Vul de gewenste standaard **gateway taal** in.
 
