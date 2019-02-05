@@ -12,7 +12,7 @@ function cgp_version_data() {
     $s['shop_name'] = 'WHMCS';
     $s['shop_version'] = $version;
     $s['plugin_name'] = 'whmcs_cgp_';
-    $s['plugin_version'] = '1.0.7';
+    $s['plugin_version'] = '1.0.8';
     return $s;
 }
 
