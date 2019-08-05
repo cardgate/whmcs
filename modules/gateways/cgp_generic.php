@@ -5,14 +5,14 @@ function cgp_version_data() {
     $fields = "value";
     $where = array( "setting" => "version" );
     $result = select_query( $table, $fields, $where );
-    $data = mysql_fetch_array( $result );
+    $data = mysqli_fetch_array( $result );
     $version = $data['value'];
 
     $s = array();
     $s['shop_name'] = 'WHMCS';
     $s['shop_version'] = $version;
     $s['plugin_name'] = 'whmcs_cgp_';
-    $s['plugin_version'] = '1.0.8';
+    $s['plugin_version'] = '1.0.9';
     return $s;
 }
 
@@ -44,7 +44,93 @@ function generateBankHtml() {
     return $html;
 }
 
+function checkBankOptions(){
+
+    $aWhere = array( "gateway" => "cgp_ideal",
+                    "setting" => "issuer_timestamp" );
+    $result = select_query( "tblpaymentgateways", "value", $aWhere );
+    $aIssuerTimestamp  = mysql_fetch_array( $result );
+
+    $aWhere = array( "gateway" => "cgp_ideal",
+                     "setting" => "testmode" );
+    $result = select_query( "tblpaymentgateways", "value", $aWhere );
+
+    $aTestMode  = mysql_fetch_array( $result );
+    $sTestMode = $aTestMode['value'];
+
+    $aBankIssuers = fetchBankOptions($sTestMode);
+    if (!$aIssuerTimestamp){
+        if (is_array($aBankIssuers)) {
+            $sBankIssuers = serialize($aBankIssuers);
+            insert_query( "tblpaymentgateways", array(
+                "gateway" => "cgp_ideal",
+                "setting" => "issuers",
+                "value"   => $sBankIssuers
+            ));
+            $timestamp = time() + 24*60*60;
+            insert_query( "tblpaymentgateways", array(
+                "gateway" => "cgp_ideal",
+                "setting" => "issuer_timestamp",
+                "value"   => $timestamp
+            ));
+            insert_query( "tblpaymentgateways", array(
+                "gateway" => "cgp_ideal",
+                "setting" => "issuer_testmode",
+                "value"   => $sTestMode
+            ));
+        }
+    } else {
+        $iIssuerTimeStamp = $aIssuerTimestamp['value'];
+        $aWhere = array( "gateway" => "cgp_ideal",
+                         "setting" => "issuer_testmode" );
+        $result = select_query( "tblpaymentgateways", "value", $aWhere );
+        $aIssuerTestmode  = mysql_fetch_array( $result );
+        $sIssuerTestmode = $aIssuerTestmode['value'];
+        $bModeChanged = ($sTestMode <> $sIssuerTestmode);
+
+        if (($iIssuerTimeStamp < time()) || $bModeChanged){
+            if (is_array($aBankIssuers)) {
+                $sBankIssuers = serialize($aBankIssuers);
+                update_query( "tblpaymentgateways",
+                    array( "value"   => $sBankIssuers),
+                    array("gateway" => "cgp_ideal", "setting" => "issuers")
+                );
+                $timestamp = time() + 24*60*60;
+                update_query( "tblpaymentgateways",
+                    array("value"   => $timestamp),
+                    array( "gateway" => "cgp_ideal", "setting" => "issuer_timestamp")
+                );
+                update_query( "tblpaymentgateways",
+                    array("value"   => $sTestMode),
+                    array( "gateway" => "cgp_ideal", "setting" => "issuer_testmode" )
+                );
+            }
+        }
+    }
+}
+
+function fetchBankOptions($sTestMode){
+    if ($sTestMode == 'Test'){
+        $url = 'https://secure-staging.curopayments.net/cache/idealDirectoryCUROPayments.dat';
+    } else {
+        $url = 'https://secure.curopayments.net/cache/idealDirectoryCUROPayments.dat';
+    }
+
+    if ( !ini_get( 'allow_url_fopen' ) || !function_exists( 'file_get_contents' ) ) {
+        $result = false;
+    } else {
+        $result = file_get_contents( $url );
+    }
+    if ( $result ) {
+        $aBanks = unserialize( $result );
+        $aBanks[0] = '-Maak uw keuze a.u.b.-';
+        return $aBanks;
+    }
+    return $result;
+}
+
 function getBankOptions() {
+    checkBankOptions();
     $url = 'https://secure.curopayments.net/cache/idealDirectoryCUROPayments.dat';
     if ( !ini_get( 'allow_url_fopen' ) || !function_exists( 'file_get_contents' ) ) {
         $result = false;
