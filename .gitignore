@@ -25,5 +25,3 @@ modules/gateways/callback/*
 !modules/gateways/cgp_przelewy24.php
 !modules/gateways/cgp_sofortbanking.php
 !modules/gateways/cgp_generic.php
-
-

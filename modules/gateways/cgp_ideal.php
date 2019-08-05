@@ -1,4 +1,5 @@
 <?php
+use WHMCS\Database\Capsule;
 
 include_once 'cgp_generic.php';
 
