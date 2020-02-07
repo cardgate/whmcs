@@ -1,0 +1,16 @@
+{
+  "name": "cardgate/whmcs",
+  "type": "library",
+  "description": "CardGate payment processing module for WHMCS",
+  "keywords": [
+    "whmcs",
+    "payment",
+    "cardgate",
+    "payment"
+  ],
+  "homepage": "https://www.cardgate.com",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": { "Cardgate\\whmcs\\" : "" }
+  }
+}
