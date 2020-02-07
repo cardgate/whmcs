@@ -1,6 +1,6 @@
 <?php
 
-include_once 'cgp_generic.php';
+include_once '../cardgate/cgp_generic.php';
 
 function cgp_mistercash_config() {
     $configarray = array(

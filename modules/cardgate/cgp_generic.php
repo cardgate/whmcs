@@ -12,7 +12,7 @@ function cgp_version_data() {
     $s['shop_name'] = 'WHMCS';
     $s['shop_version'] = $version;
     $s['plugin_name'] = 'whmcs_cgp_';
-    $s['plugin_version'] = '1.0.9';
+    $s['plugin_version'] = '1.0.10';
     return $s;
 }
 
@@ -146,7 +146,7 @@ function getBankOptions() {
 }
 
 function cgp_form( $params, $option ) {
-    
+
     # Gateway Specific Variables
     $gatewayusername = $params['username'];
     $gatewaytestmode = $params['testmode'];
@@ -207,7 +207,7 @@ function cgp_form( $params, $option ) {
     $s = cgp_version_data();
 
     # Enter your code submit to the gateway...
-
+    $bankHtml = '';
     if ( $cgpOption == 'ideal' ) {
         $bankHtml .= generateBankHtml();
     } else {

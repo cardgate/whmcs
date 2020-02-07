@@ -2,6 +2,8 @@
 
 # CardGate Modul für WHMCS Version **5.x.x** und WHMCS Version **6.x**
 
+[![Build Status](https://travis-ci.org/cardgate/whmcs.svg?branch=master)](https://travis-ci.org/cardgate/whmcs)
+
 ## Support
 
 Dieses Modul is geeignet für WHMCS Version **5.x.x** und WHMCS Version **6.x**

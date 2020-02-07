@@ -2,9 +2,9 @@
 
 include_once '../cardgate/cgp_generic.php';
 
-function cgp_sofortbanking_config() {
+function cgp_onlineueberweisen_config() {
     $configarray = array(
-        "FriendlyName" => array( "Type" => "System", "Value" => "Card Gate - SofortBanking" ),
+        "FriendlyName" => array( "Type" => "System", "Value" => "Card Gate - OnlineÜberweisen" ),
         "testmode" => array( "FriendlyName" => "Mode", "Type" => "dropdown", "Options" => "Test,Live", ),
         "siteid" => array( "FriendlyName" => "Site ID", "Type" => "text", "Size" => "15", ),
         "hashkey" => array( "FriendlyName" => "Hash key", "Type" => "text", "Size" => "15", ),
@@ -14,8 +14,8 @@ function cgp_sofortbanking_config() {
     return $configarray;
 }
 
-function cgp_sofortbanking_link( $params ) {
-    return cgp_form($params, 'directebanking');
+function cgp_onlineueberweisen_link( $params ) {
+   return cgp_form($params, 'onlineueberweisen');
 }
 
 ?>
