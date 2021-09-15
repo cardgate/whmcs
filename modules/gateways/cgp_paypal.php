@@ -1,6 +1,7 @@
 <?php
 
-include_once '../cardgate/cgp_generic.php';
+$sRoot = dirname(dirname(__FILE__));
+include_once $sRoot.'/cardgate/cgp_generic.php';
 
 function cgp_paypal_config() {
     $configarray = array(
