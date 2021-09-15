@@ -1,11 +1,11 @@
 <?php
 
 $sRoot = dirname(dirname(__FILE__));
-include_once $sRoot.'/cardgate/cgp_generic.php';
+ include_once $sRoot.'/cardgate/cgp_generic.php';
 
-function cgp_giropay_config() {
+function cgp_spraypay_config() {
     $configarray = array(
-        "FriendlyName" => array( "Type" => "System", "Value" => "Card Gate - Giropay" ),
+        "FriendlyName" => array( "Type" => "System", "Value" => "Card Gate - SprayPay" ),
         "testmode" => array( "FriendlyName" => "Mode", "Type" => "dropdown", "Options" => "Test,Live", ),
         "siteid" => array( "FriendlyName" => "Site ID", "Type" => "text", "Size" => "15", ),
         "hashkey" => array( "FriendlyName" => "Hash key", "Type" => "text", "Size" => "15", ),
@@ -15,8 +15,8 @@ function cgp_giropay_config() {
     return $configarray;
 }
 
-function cgp_giropay_link( $params ) {
-   return cgp_form($params, 'giropay');
+function cgp_spraypay_link( $params ) {
+   return cgp_form($params, 'spraypay');
 }
 
 ?>
