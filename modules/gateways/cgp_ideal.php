@@ -1,7 +1,8 @@
 <?php
 use WHMCS\Database\Capsule;
 
-include_once '../cardgate/cgp_generic.php';
+$sRoot = dirname(dirname(__FILE__));
+include_once $sRoot.'/cardgate/cgp_generic.php';
 
 function cgp_ideal_config() {
     $configarray = array(
