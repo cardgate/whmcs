@@ -18,8 +18,7 @@ or contact your accountmanager.
 
 1. Download and unzip the most recent [source code](https://github.com/cardgate/whmcs/releases/) file on your desktop.
 
-2. Upload the **gateways** folder to the **modules** folder of your webshop.
-
+2. Upload the **modules** folder to the **root** folder of your webshop.
 ## Configuration
 
 1. Login to the **admin** section of your webshop.

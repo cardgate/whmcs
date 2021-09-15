@@ -19,7 +19,7 @@ of vraag deze gegevens aan uw accountmanager.
 
 1. Download en unzip de meest recente [source code](https://github.com/cardgate/whmcs/releases/) op je bureaublad.
 
-2. Upload de **gateways** map naar de **modules** map van je webshop.
+2. Upload de **modules** map naar de **root** map van je webshop.
 
 ## Configuratie
 

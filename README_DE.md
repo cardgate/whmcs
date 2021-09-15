@@ -17,7 +17,7 @@ Gehen Sie zu [**Mein CardGate**](https://my.cardgate.com/) und fragen Sie Ihre *
 
 1. Downloaden Sie den aktuellsten [**Source Code**](https://github.com/cardgate/whmcs/releases/) auf Ihrem Desktop.
 
-2. Entpacken und uploaden Sie den **Gateway-Ordner** in den **Module-Ordner** von Ihrem Webshop. 
+2. Entpacken und uploaden Sie den **Modules-Ordner** in den **Root-Ordner** von Ihrem Webshop.
 
 ## Konfiguration
 
