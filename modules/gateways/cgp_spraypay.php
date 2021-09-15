@@ -1,7 +1,7 @@
 <?php
 
 $sRoot = dirname(dirname(__FILE__));
- include_once $sRoot.'/cardgate/cgp_generic.php';
+include_once $sRoot.'/cardgate/cgp_generic.php';
 
 function cgp_spraypay_config() {
     $configarray = array(
