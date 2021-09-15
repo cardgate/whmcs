@@ -16,7 +16,7 @@ or contact your accountmanager.
 
 ## Installation
 
-1. Download and unzip the most recent [source code](https://github.com/cardgate/whmcs/releases/) file on your desktop.
+1. Download and unzip the most recent [cardgate.zip](https://github.com/cardgate/whmcs/releases/) file on your desktop.
 
 2. Upload the **modules** folder to the **root** folder of your webshop.
 ## Configuration
